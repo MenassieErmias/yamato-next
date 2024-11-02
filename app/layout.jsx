@@ -26,12 +26,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${rubik.className} antialiased`}
-      >
+      <body>
         <Navbar />
         {children}
       </body>
     </html>
   );
 }
+
+//${geistSans.variable} ${geistMono.variable} 
