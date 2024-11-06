@@ -1,9 +1,6 @@
 import React from 'react'
 import SpecCard from './SpecCard';
-import scada from '../../public/assets/Images/scada.png';
-import controlBoards from '../../public/assets/Images/control-boards.png';
-import solarPower from '../../public/assets/Images/solar-power.png';
-
+import '../home.modules.css'
 const Specs = () => {
   const specsArr = [
     {
