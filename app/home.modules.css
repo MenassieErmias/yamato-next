@@ -68,6 +68,7 @@ h2.desc {
 
 .card-heading {
   font-weight: bolder;
+  text-align: center;
   font-size: 1.5rem;
   border-bottom: 2px solid black;
 }
