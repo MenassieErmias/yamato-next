@@ -1,9 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import homeStyles from '../home.modules.css';
-import scada from '../../public/assets/Images/scada.png';
-import controlBoards from '../../public/assets/Images/control-boards.png';
-import solarPower from '../../public/assets/Images/solar-power.png';
+
 
 const SpecCard = ({ content, heading, imageURL }) => {
   return (
