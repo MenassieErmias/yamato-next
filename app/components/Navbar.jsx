@@ -18,16 +18,16 @@ const Navbar = () => {
         {/* menu */}
         <ul className={mobileMenuOn ? 'nav-links-list' : 'nav-links-list display-none'}>
           <li className="nav-link-item">
-            <Link href="/services">Services</Link>
+            <Link className='nav-link' href="/services">Services</Link>
           </li>
-          <li className="nav-link">
-            <Link href="/">Home</Link>
+          <li className="nav-link-item">
+            <Link className='nav-link' href="/">Home</Link>
           </li>
-          <li className="nav-link">
-            <Link href="/about">About</Link>
+          <li className="nav-link-item">
+            <Link className='nav-link' href="/about">About</Link>
           </li>
-          <li className="nav-link">
-            <Link href="/contact">Contact</Link>
+          <li className="nav-link-item">
+            <Link className='nav-link' href="/contact">Contact</Link>
           </li>
         </ul>
 
