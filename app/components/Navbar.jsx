@@ -4,6 +4,8 @@ import Link from "next/link"
 import './../nav.modules.css'
 import { useState } from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoIosClose } from "react-icons/io";
+
 
 const Navbar = () => {
 
@@ -13,13 +15,8 @@ const Navbar = () => {
       <div className="nav-container">
         <h1 className='nav-header'>Yamato Engineering</h1>
 
-        <button
-          className='mobile-menu-btn'
-          onClick={(mobileMenuOn) => setMobileMenuOn(!mobileMenuOn)}
-        >
-          <RxHamburgerMenu className='hamburget-icon' />
-        </button>
-        <ul className="nav-links-list display-none">
+        {/* menu */}
+        <ul className={mobileMenuOn ? 'nav-links-list' : 'display-none'}>
           <li className="nav-link-item">
             <Link href="/services">Services</Link>
           </li>
@@ -33,6 +30,19 @@ const Navbar = () => {
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
+
+        <button
+          className='mobile-menu-btn'
+          onClick={() => setMobileMenuOn((mobileMenuOn) => !mobileMenuOn)}
+        >
+          {
+            mobileMenuOn ?
+              <IoIosClose className='hamburger-icon' />
+
+              : <RxHamburgerMenu className='hamburger-icon' />
+          }
+
+        </button>
       </div>
     </nav >
   )
