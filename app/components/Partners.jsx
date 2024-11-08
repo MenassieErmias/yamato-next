@@ -15,10 +15,11 @@ const Partners = () => {
   ]
   return (
     <div className='partners'>
+      <h1 className="partners-header">
+        Here are some of the partners we have worked with
+      </h1>
       <div className="partners-container">
-        <h1 className="partners-header">
-          Here are some of the partners we have worked with
-        </h1>
+
         {
           partnersArr.map((partner, index) => (
             <PartnerCard key={index} name={partner.name} imageURL={partner.imageURL} link={partner.link} />
