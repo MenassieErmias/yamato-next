@@ -46,6 +46,10 @@
     display: none;
   }
 
+  .display-none {
+    display: flex;
+  }
+
   .nav-links-list {
     display: flex;
     gap: 1rem;
@@ -54,6 +58,7 @@
     background-color: transparent;
     flex-direction: row;
   }
+
 
 
 }

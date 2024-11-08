@@ -16,7 +16,7 @@ const Navbar = () => {
         <h1 className='nav-header'>Yamato Engineering</h1>
 
         {/* menu */}
-        <ul className={mobileMenuOn ? 'nav-links-list' : 'display-none'}>
+        <ul className={mobileMenuOn ? 'nav-links-list' : 'nav-links-list display-none'}>
           <li className="nav-link-item">
             <Link href="/services">Services</Link>
           </li>
